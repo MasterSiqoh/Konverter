@@ -866,7 +866,7 @@
           {
             "position": {
               "x": 620,
-              "y": 770
+              "y": 740
             },
             "size": {
               "width": 60,
@@ -980,6 +980,13 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1771,22 +1778,7 @@
               "cell": "e3dad700-816b-4892-987c-d45afaa6c36f",
               "port": "e9afd0cd-427f-4c8c-821d-3c643d0e0ea8"
             },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -1919,7 +1911,7 @@
             "vertices": [
               {
                 "x": 780,
-                "y": 770
+                "y": 740
               }
             ]
           },
@@ -1989,7 +1981,7 @@
             "vertices": [
               {
                 "x": 840,
-                "y": 620
+                "y": 590
               }
             ]
           },
@@ -2058,8 +2050,8 @@
             },
             "vertices": [
               {
-                "x": 160,
-                "y": 600
+                "x": 190,
+                "y": 680
               }
             ]
           },
