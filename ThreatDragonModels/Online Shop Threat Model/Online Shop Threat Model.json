@@ -1,0 +1,31 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "Online Shop Threat Model",
+    "owner": "Haditama Union",
+    "description": "koperasi yang mengembangkan aplikasi pembelanjaan online baru, dengan fokus pada pemodelan ancaman dan kerentanannya.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Arif Bintang Haditama"
+      }
+    ],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "e-commerce",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.4.1",
+        "cells": [],
+        "description": "e-commerce STRIDE"
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Haditama Security",
+    "threatTop": 0
+  }
+}
