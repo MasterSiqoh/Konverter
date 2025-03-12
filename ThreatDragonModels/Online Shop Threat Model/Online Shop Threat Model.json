@@ -35,13 +35,14 @@
                 "text": "Pengguna"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -125,16 +126,33 @@
               ]
             },
             "id": "0f44ad68-00ce-4a5e-b095-525a9ca4f2fd",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Pengguna",
               "description": "Pelanggan yang melakukan pembelian.",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "2f190797-2af7-494d-a4c8-184c1b4a8c70",
+                  "title": "Akun Dibajak",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Akun dibajak oleh orang lain",
+                  "mitigation": "Edukasi pengguna tentang keamanan digital.  ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -158,6 +176,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -241,7 +260,6 @@
               ]
             },
             "id": "3221447a-5632-41bd-9994-7c2ff4046ca4",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Payment Gateway",
@@ -274,6 +292,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -357,7 +376,6 @@
               ]
             },
             "id": "15843411-03a6-4f45-beae-76f73eafbcd3",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Bank",
@@ -390,6 +408,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -473,7 +492,6 @@
               ]
             },
             "id": "e2a8094d-19ad-4992-aa86-62d583fb6a7c",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Pemesanan Produk",
@@ -509,6 +527,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -592,7 +611,6 @@
               ]
             },
             "id": "1f233a05-3387-4118-8d69-8ad765351305",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Pemrosesan Pembayaran",
@@ -628,6 +646,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -711,7 +730,6 @@
               ]
             },
             "id": "e3dad700-816b-4892-987c-d45afaa6c36f",
-            "zIndex": 6,
             "data": {
               "type": "tm.Process",
               "name": "Validasi Bank",
@@ -747,6 +765,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -830,7 +849,6 @@
               ]
             },
             "id": "61fc9820-53ff-4ccb-aef3-ec3ff2b30cc9",
-            "zIndex": 7,
             "data": {
               "type": "tm.Process",
               "name": "Komunikasi Payment Gateway",
@@ -866,6 +884,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 8,
             "ports": {
               "groups": {
                 "top": {
@@ -949,7 +968,6 @@
               ]
             },
             "id": "934a7a68-f230-4b75-8993-64712a7c00e0",
-            "zIndex": 8,
             "data": {
               "type": "tm.Process",
               "name": "Konfirmasi Pesanan",
@@ -988,6 +1006,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 9,
             "ports": {
               "groups": {
                 "top": {
@@ -1071,7 +1090,6 @@
               ]
             },
             "id": "4b95917a-b2c7-4045-b690-9ebb7632a9eb",
-            "zIndex": 9,
             "data": {
               "type": "tm.Store",
               "name": "Database Pesanan",
@@ -1111,6 +1129,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 10,
             "ports": {
               "groups": {
                 "top": {
@@ -1194,7 +1213,6 @@
               ]
             },
             "id": "a8de92d0-c427-4353-8199-f1103337cebe",
-            "zIndex": 10,
             "data": {
               "type": "tm.Store",
               "name": "Database Pembayaran",
@@ -2047,6 +2065,7 @@
             },
             "width": 200,
             "height": 100,
+            "zIndex": 12,
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
@@ -2097,8 +2116,7 @@
                 "x": 360,
                 "y": 270
               }
-            ],
-            "zIndex": 12
+            ]
           },
           {
             "shape": "flow",
@@ -2117,6 +2135,7 @@
             },
             "width": 200,
             "height": 100,
+            "zIndex": 14,
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
@@ -2167,8 +2186,7 @@
                 "x": 420,
                 "y": 200
               }
-            ],
-            "zIndex": 14
+            ]
           }
         ],
         "description": "e-commerce STRIDE"
@@ -2176,6 +2194,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Haditama Security",
-    "threatTop": 14
+    "threatTop": 15
   }
 }
