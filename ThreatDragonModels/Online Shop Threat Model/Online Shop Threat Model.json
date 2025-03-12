@@ -980,13 +980,6 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -2050,10 +2043,73 @@
             },
             "vertices": [
               {
-                "x": 190,
-                "y": 680
+                "x": 170,
+                "y": 750
               }
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Web Server Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Web Server Boundary"
+            ],
+            "id": "b1fa056f-ba69-49fe-9c0b-d41fde547bf7",
+            "source": {
+              "x": 510,
+              "y": 20
+            },
+            "target": {
+              "x": 510,
+              "y": 1160
+            },
+            "vertices": []
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Restricted Network Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Restricted Network Boundary"
+            ],
+            "id": "ffc12ab4-0fc8-4627-9cdd-5cde8859526c",
+            "source": {
+              "x": 800,
+              "y": 160
+            },
+            "target": {
+              "x": 800,
+              "y": 900
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
